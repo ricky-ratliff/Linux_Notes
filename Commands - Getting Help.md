@@ -1,38 +1,45 @@
 # Commands - Getting Help
 
-## Getting Help in Linux
+## MAN Pages
 
- 
-### MAN Pages
-    $ man [COMMAND NAME]
+### man command
 
-`$ man ls`
- 
-*The man page is displayed with the less command*
+`$ man [COMMAND NAME]` 
 
-#### SHORTCUTS:
-- h         => getting help
-- q         => quit
-- enter     => show next line
-- space     => show next screen
-- /string   => search forward for a string
-- ?string   => search backwards for a string
-- n / N     => next/previous appearance
- 
-### Checking if a command is shell built-in or executable file
-` $ type rm` 
+*The man page is displayed*
 
-        rm is /usr/bin/rm
+### Shortcuts
 
-` $ type cd` 
-        
-        cd is a shell builtin
- 
-### Getting help for shell built-in commands
-help command    # => Ex: help cd
-command --help  # => Ex: rm --help
- 
-### Searching for a command, feature or keyword in all man Pages
-man -k uname
-man -k "copy files"
-apropos passwd
+- `$ h` getting help
+- `$ q` quit
+- `$ enter` show next line
+- `$ space` show next screen
+- `$ /string` search forward for string
+- `$ ?string` search backward for string
+- `$ n / N` next/previous appearance of string in search
+
+### Checking if command is shell built-in or executable file
+
+`$ type rm` 
+
+    rm is /usr/bin/rm
+
+*example of output showing rm is an executable binary*
+
+`$ type cd`
+
+    cd is a shell built-in
+
+*excample of output showing cd is a shell built-in*
+
+### Getting help for commands
+
+- `$ help [COMMAND NAME]` 
+
+- `$ [COMMAND NAME] --help`
+
+### Searching for a command, feature, or keyword in all man pages
+
+- `$ man -k uname`
+- `$ man -k "copy files"`
+- `$ apropos passwd`
